@@ -15,8 +15,8 @@ export default function App() {
 
   //options for choosing gender 
   const options = [
-    { label: 'Mies', value: 1},
-    { label: 'Nainen', value: 2}
+    { label: 'Male', value: 1},
+    { label: 'Female', value: 2}
   ]
 
   //calculation based on gender choice. If result is less than zero, show result as zero.
