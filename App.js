@@ -13,11 +13,13 @@ export default function App() {
   const [level, setLevel] = useState(0)
   const [test, setTest] = useState(0) 
 
+  //options for choosing gender 
   const options = [
     { label: 'Mies', value: 1},
     { label: 'Nainen', value: 2}
   ]
 
+  //calculation based on gender choice. If result is less than zero, show result as zero.
   const calculate = () => {
  
     if (weight.length == 0) {
@@ -35,7 +37,7 @@ export default function App() {
     if (result<0) {
       result = 0
     }
-    //result = gramsLeft(weight*0.7)
+
   
     setLevel(result)
   }
